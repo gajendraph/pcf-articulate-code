@@ -1,8 +1,10 @@
 package io.pivotal.education.articulate.controller;
 
-import io.pivotal.education.articulate.model.Attendee;
-import io.pivotal.education.articulate.service.AttendeeService;
-import io.pivotal.education.articulate.service.EnvironmentHelper;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -11,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
+import io.pivotal.education.articulate.model.Attendee;
+import io.pivotal.education.articulate.service.AttendeeService;
+import io.pivotal.education.articulate.service.EnvironmentHelper;
 
 /**
  * @author mborges
